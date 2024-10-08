@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/projects/static/css/main.6c11ad89.css",
+    "main.js": "/projects/static/js/main.a3ea45e0.js",
+    "static/media/news.png": "/projects/static/media/news.c78cb04ba69c9f4c69c1.png",
+    "static/media/first.png": "/projects/static/media/first.46afe612851f7b5fd9e9.png",
+    "static/media/web_developer_certificate.pdf": "/projects/static/media/web_developer_certificate.c33e48adc05b35690837.pdf",
+    "static/media/proyecto-noticias.png": "/projects/static/media/proyecto-noticias.27048e42331be3930359.png",
+    "static/media/CursoCSS.pdf": "/projects/static/media/CursoCSS.3d8ba4e40aa8d02b113e.pdf",
+    "static/media/CursoHTML.pdf": "/projects/static/media/CursoHTML.18ff920b23151862f5f6.pdf",
+    "static/media/proyecto-empleo.png": "/projects/static/media/proyecto-empleo.cc9ac1883c2fd7ec1f30.png",
+    "static/media/proyecto-card.png": "/projects/static/media/proyecto-card.916a47bef78ab05fd171.png",
+    "static/media/Javascript.png": "/projects/static/media/Javascript.ac9dfed8cc47aaf684f2.png",
+    "static/media/me.jpeg": "/projects/static/media/me.ba8b1aa378aa98645fd4.jpeg",
+    "static/media/Responsive.png": "/projects/static/media/Responsive.64521b24ae84b6dcc472.png",
+    "index.html": "/projects/index.html",
+    "main.6c11ad89.css.map": "/projects/static/css/main.6c11ad89.css.map",
+    "main.a3ea45e0.js.map": "/projects/static/js/main.a3ea45e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c11ad89.css",
+    "static/js/main.a3ea45e0.js"
+  ]
+}
