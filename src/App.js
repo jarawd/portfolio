@@ -1,123 +1,139 @@
-//Iconos
-import { AiOutlineMail } from "react-icons/ai";
-import { FaLinkedin } from "react-icons/fa";
+//Icons
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaLinkedin } from 'react-icons/fa';
 
-//Mi foto
-import fotOrlando from "./imagenes/orlando-2.jpg";
-
-//Componentes
-import Proyecto from "./componentes/Proyecto";
-import Curso from "./componentes/Curso";
+//Components
+import Proyecto from './componentes/Proyecto';
+import Curso from './componentes/Curso';
 
 function App() {
   const proyectos = [
     {
       url: [
-        "https://github.com/orlandojaradev/card_validation",
-        "https://orlandojaradev.github.io/card_validation/",
+        'https://github.com/jarawd/news-app?tab=readme-ov-file',
+        'https://jarawd.github.io/news-app/',
       ],
-      img: require("./imagenes/proyecto-card.png"),
-      titulo: "Validación de Tarjeta",
+      img: require('./imagenes/news.png'),
+      titulo: 'Aplicación de noticias globales',
       descripcion:
-        "Sección interactiva para la validación de datos de una tarjeta crédito/débito.",
-      tecnologias: ["HTML", "Sass", "Javascript"],
+        'App que consulta una API para obtener la información de noticias globales',
+      tecnologias: ['HTML', 'Sass', 'Javascript', 'React'],
     },
     {
       url: [
-        "https://github.com/orlandojaradev/news_homepage",
-        "https://orlandojaradev.github.io/news_homepage/",
+        'https://github.com/jarawd/web_project_api_full',
+        'https://flux.crabdance.com/',
       ],
-      img: require("./imagenes/proyecto-noticias.png"),
-      titulo: "Página de Inicio de Noticias",
+      img: require('./imagenes/first.png'),
+      titulo: 'Galería de imágenes',
       descripcion:
-        "En esta interfaz se lleva a cabo el diseño Responsive para brindar una mejor experiencia al usuario.",
-      tecnologias: ["HTML", "Sass", "Javascript"],
+        'App de galería de imagenes con registro e inicio de sesión con funcionalidad para agregar y eliminar tarjetas, dar me gusta y modificar la información del perfil.',
+      tecnologias: ['HTML', 'Sass', 'Javascript', 'React'],
     },
     {
       url: [
-        "https://github.com/orlandojaradev/jobs_filter",
-        "https://orlandojaradev.github.io/jobs_filter/#top",
+        'https://github.com/orlandojaradev/card_validation',
+        'https://orlandojaradev.github.io/card_validation/',
       ],
-      img: require("./imagenes/proyecto-empleo.png"),
-      titulo: "Lista de Empleos",
+      img: require('./imagenes/proyecto-card.png'),
+      titulo: 'Validación de Tarjeta',
       descripcion:
-        "Lista de empleos en la cual se pueden usar filtros en base a las categorías seleccionadas.",
-      tecnologias: ["HTML", "Sass", "React"],
+        'Sección interactiva para la validación de datos de una tarjeta crédito/débito.',
+      tecnologias: ['HTML', 'Sass', 'Javascript'],
+    },
+    {
+      url: [
+        'https://github.com/orlandojaradev/news_homepage',
+        'https://orlandojaradev.github.io/news_homepage/',
+      ],
+      img: require('./imagenes/proyecto-noticias.png'),
+      titulo: 'Página de Inicio de Noticias',
+      descripcion:
+        'En esta interfaz se lleva a cabo el diseño Responsive para brindar una mejor experiencia al usuario.',
+      tecnologias: ['HTML', 'Sass', 'Javascript'],
+    },
+    {
+      url: [
+        'https://github.com/orlandojaradev/jobs_filter',
+        'https://orlandojaradev.github.io/jobs_filter/#top',
+      ],
+      img: require('./imagenes/proyecto-empleo.png'),
+      titulo: 'Lista de Empleos',
+      descripcion:
+        'Lista de empleos en la cual se pueden usar filtros en base a las categorías seleccionadas.',
+      tecnologias: ['HTML', 'Sass', 'React'],
     },
   ];
 
   const cursos = [
     {
-      sitio: "Udemy",
+      sitio: 'Tripleten',
       titulo: [
-        "Curso de HTML5 desde cero: El más completo en Español",
-        "https://www.udemy.com/course/el-curso-de-html5-desde-cero-mas-completo/",
+        'Desarrollador Web',
+        'https://tripleten.com/es-mex/web/workshop/',
       ],
-      fecha: "enero 2022",
-      certificado: ["Certificado", require("./documentos/CursoHTML.pdf")],
+      fecha: 'oct 2023 - ago 2024',
+      certificado: [
+        'Certificado',
+        require('./documentos/web_developer_certificate.pdf'),
+      ],
     },
     {
-      sitio: "Udemy",
+      sitio: 'Udemy',
       titulo: [
-        "Master en CSS: Responsive, SASS, Flexbox, Grid y Bootstrap",
-        "https://www.udemy.com/course/master-en-css-responsive-sass-flexbox-grid-y-boostrap-4/",
+        'Curso de HTML5 desde cero: El más completo en Español',
+        'https://www.udemy.com/course/el-curso-de-html5-desde-cero-mas-completo/',
       ],
-      fecha: "enero 2022",
-      certificado: ["Certificado", require("./documentos/CursoCSS.pdf")],
+      fecha: 'enero 2022',
+      certificado: ['Certificado', require('./documentos/CursoHTML.pdf')],
     },
     {
-      sitio: "jonmircha",
-      titulo: ["Curso Javascript", "https://jonmircha.com"],
-      fecha: "marzo 2022",
-      certificado: [null, null],
-    },
-    {
-      sitio: "freeCodeCamp",
+      sitio: 'Udemy',
       titulo: [
-        "Diseño Web Responsivo",
-        "https://freecodecamp.org/learn/2022/responsive-web-design/",
+        'Master en CSS: Responsive, SASS, Flexbox, Grid y Bootstrap',
+        'https://www.udemy.com/course/master-en-css-responsive-sass-flexbox-grid-y-boostrap-4/',
       ],
-      fecha: "novimebre 2022",
-      certificado: ["Certificado", require("./documentos/Responsive.png")],
+      fecha: 'enero 2022',
+      certificado: ['Certificado', require('./documentos/CursoCSS.pdf')],
     },
     {
-      sitio: "freeCodeCamp",
+      sitio: 'freeCodeCamp',
       titulo: [
-        "Algoritmos de JavaScript y Estructuras de Datos",
-        "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+        'Diseño Web Responsivo',
+        'https://freecodecamp.org/learn/2022/responsive-web-design/',
       ],
-      fecha: "diciembre 2022",
-      certificado: ["Certificado", require("./documentos/Javascript.png")],
+      fecha: 'novimebre 2022',
+      certificado: ['Certificado', require('./documentos/Responsive.png')],
     },
     {
-      sitio: "Mozilla Developer Network",
-      titulo: ["MDN Web Docs", "https://developer.mozilla.org/es/"],
-      fecha: "Forever ;)",
-      certificado: [null, null],
+      sitio: 'freeCodeCamp',
+      titulo: [
+        'Algoritmos de JavaScript y Estructuras de Datos',
+        'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
+      ],
+      fecha: 'diciembre 2022',
+      certificado: ['Certificado', require('./documentos/Javascript.png')],
     },
   ];
 
   return (
     <div className="contenedor-principal">
       <header className="header">
-        <div className="foto-contenedor">
-          <img src={fotOrlando} alt="Foto de Orlando" />
-        </div>
+        <div className="foto-contenedor"></div>
         <h1>Hola, Soy Orlando</h1>
         <p className="profesion">Desarrollador Frontend</p>
-        <p className="origen">Vivo en la Comarca Lagunera, México.</p>
         <div className="contacto">
           <h3>CONTACTO</h3>
           <div className="contacto-iconos">
             <a
-              href="mailto:orlandojara92@outlook.com"
+              href="mailto:devjara11@gmail.com"
               rel="noreferrer noopener"
               target="_blank"
             >
               <AiOutlineMail className="icono email" /> Email
             </a>
             <a
-              href="https://mx.linkedin.com/in/orlandojaradev"
+              href="https://www.linkedin.com/in/orlando-jara-976288271/"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -126,13 +142,22 @@ function App() {
           </div>
         </div>
         <nav className="menu">
-          <a className="link-seccion" href="#top">
+          <a
+            className="link-seccion"
+            href="#top"
+          >
             Inicio
           </a>
-          <a className="link-seccion" href="#seccion1">
+          <a
+            className="link-seccion"
+            href="#seccion1"
+          >
             Proyectos
           </a>
-          <a className="link-seccion" href="#seccion2">
+          <a
+            className="link-seccion"
+            href="#seccion2"
+          >
             Educación
           </a>
         </nav>
@@ -145,12 +170,16 @@ function App() {
         podemos hacer un buen equipo. <i>¡Sólo tienes que contactarme!</i>
       </p>
       <main className="contenedor-secciones">
-        <section id="seccion1" className="proyectos">
+        <section
+          id="seccion1"
+          className="proyectos"
+        >
           <h2>Proyectos</h2>
           <div class="contenedor-proyectos">
-            {proyectos.map((el) => {
+            {proyectos.map((el, i) => {
               return (
                 <Proyecto
+                  key={i}
                   url={el.url}
                   img={el.img}
                   titulo={el.titulo}
@@ -161,13 +190,16 @@ function App() {
             })}
           </div>
         </section>
-        <section id="seccion2" className="educacion">
+        <section
+          id="seccion2"
+          className="educacion"
+        >
           <h2>Educación</h2>
-          <span class="metodo">100% Autodidacta</span>
           <div class="contenedor-cursos">
-            {cursos.map((el) => {
+            {cursos.map((el, i) => {
               return (
                 <Curso
+                  key={i}
                   sitio={el.sitio}
                   titulo={el.titulo}
                   fecha={el.fecha}
@@ -179,7 +211,7 @@ function App() {
         </section>
       </main>
       <footer>
-        <span className="autor">Creado por Orlando Jara - 2023 </span>
+        <span className="autor">Creado por Orlando Jara | 2024 </span>
       </footer>
     </div>
   );
