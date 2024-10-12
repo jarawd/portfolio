@@ -2,6 +2,7 @@ import React from 'react';
 import { GrReactjs } from 'react-icons/gr';
 import { FaHtml5 } from 'react-icons/fa';
 import { FaSass } from 'react-icons/fa';
+import { FaCss3Alt } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FiExternalLink } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
@@ -24,16 +25,44 @@ function Proyecto({ url, img, titulo, descripcion, tech }) {
         <div>
           {tech.map((el, i) => {
             if (el === 'HTML') {
-              return <FaHtml5 className="tecnologia html" />;
+              return (
+                <FaHtml5
+                  key={i}
+                  className="tecnologia html"
+                />
+              );
             }
             if (el === 'Javascript') {
-              return <IoLogoJavascript className="tecnologia javascript" />;
+              return (
+                <IoLogoJavascript
+                  key={i}
+                  className="tecnologia javascript"
+                />
+              );
             }
             if (el === 'React') {
-              return <GrReactjs className="tecnologia react" />;
+              return (
+                <GrReactjs
+                  key={i}
+                  className="tecnologia react"
+                />
+              );
             }
             if (el === 'Sass') {
-              return <FaSass className="tecnologia sass" />;
+              return (
+                <FaSass
+                  key={i}
+                  className="tecnologia sass"
+                />
+              );
+            }
+            if (el === 'CSS') {
+              return (
+                <FaCss3Alt
+                  key={i}
+                  className="tecnologia css"
+                />
+              );
             }
 
             return '';

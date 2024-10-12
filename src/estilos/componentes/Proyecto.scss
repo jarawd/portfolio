@@ -101,6 +101,9 @@
     .react {
       @include estilos-tecnologias($color-react, 3rem);
     }
+    .css {
+      @include estilos-tecnologias($color-css, 3rem);
+    }
   }
 
   .contenedor-botones {
@@ -147,14 +150,17 @@
     .html {
       @include tecnologiasRetardo(0.2s);
     }
-    .sass {
+    .css {
       @include tecnologiasRetardo(0.4s);
     }
-    .javascript {
+    .sass {
       @include tecnologiasRetardo(0.6s);
     }
-    .react {
+    .javascript {
       @include tecnologiasRetardo(0.8s);
+    }
+    .react {
+      @include tecnologiasRetardo(1s);
     }
   }
 }
