@@ -12,13 +12,13 @@ const projects = [
   },
   {
     url: [
-      'https://github.com/jarawd/web_project_api_full',
-      'https://flux.crabdance.com/',
+      'https://github.com/jarawd/movies',
+      'https://jarawd.github.io/movies/',
     ],
-    img: require('../imagenes/first.png'),
-    titulo: 'Galería de imágenes',
+    img: require('../imagenes/movies.png'),
+    titulo: 'App de películas',
     descripcion:
-      'App de galería de imagenes con registro e inicio de sesión con funcionalidad para agregar y eliminar tarjetas, dar me gusta y modificar la información del perfil.',
+      'Aplicación que consulta una API y muestra en forma de tarjetas las películas ordenadas por categorías',
     tecnologias: ['HTML', 'CSS', 'Javascript', 'React'],
   },
   {
