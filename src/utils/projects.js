@@ -1,6 +1,17 @@
 const projects = [
   {
     url: [
+      'https://github.com/jarawd/la_bella',
+      'https://jarawd.github.io/la_bella/',
+    ],
+    img: require('../imagenes/restaurant.png'),
+    titulo: 'Aplicación de Restaurante',
+    descripcion:
+      'App de un restaurante con 5 productos disponibles y las sucursales disponibles',
+    tecnologias: ['HTML', 'CSS', 'Javascript', 'React'],
+  },
+  {
+    url: [
       'https://github.com/jarawd/news-app?tab=readme-ov-file',
       'https://jarawd.github.io/news-app/',
     ],
